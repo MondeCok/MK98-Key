@@ -1,0 +1,49 @@
+{
+    "type": "InteractiveHtmlBom settings",
+    "version": 1,
+    "pcbmetadata": {
+        "title": "MK98",
+        "revision": "",
+        "company": "",
+        "date": "2026-01-16 03:06:26"
+    },
+    "settings": {
+        "canvaslayout": "FB",
+        "bomlayout": "left-right",
+        "bommode": "grouped",
+        "checkboxes": [
+            "Sourced",
+            "Placed"
+        ],
+        "checkboxStoredRefs": {
+            "Sourced": "268,146,311,106,31,99,125,100,223,82,331,167,147,183,68,275,303,321,186,136,97,196,111,41,93,309,233,27,21,177,334,76,189,335,317,244,332,193,298,202,57,72,283,272,176,204,191,101,230,344,108,232,122,212,118,370,316,121,194,271,289,182,201,323,267,222,226,280,67,354,169,324,208,153,172,104,139,198,166,71,237,116,160,188,338,170,304,126,173,105,358,200,214,341,296,353,128,161,278,66,371,90,134,299,36,328,282,138,286,154,366,95,276,290,59,372,365,37,302,315,351,240,229,78,33,249,117,347,207,65,151,58,318,112,190,145,0,11,2,10,6,13,8,69,199,15,19,224,140,209,314,51,235,132,87,227,123,295,43,206,178,181,326,187,110,155,129,352,165,306,325,312,109,20,255,77,330,79,107,135,250,248,25,96,17,94,349,174,291,180,277,313,28,30,168,329,83,158,221,197,348,86,269,52,357,18,84,285,355,333,246,257,164,327,16,115,215,253,260,44,119,361,81,26,63,262,62,373,185,346,92,305,113,39,308,137,310,219,279,205,195,360,284,175,261,263,245,127,75,362,292,120,236,270,141,287,53,85,24,150,64",
+            "Placed": ""
+        },
+        "darkMode": true,
+        "highlightpin1": "none",
+        "redrawOnDrag": true,
+        "boardRotation": 0,
+        "offsetBackRotation": false,
+        "renderPads": true,
+        "renderReferences": true,
+        "renderValues": false,
+        "renderSilkscreen": true,
+        "renderFabrication": false,
+        "renderDnpOutline": false,
+        "renderTracks": false,
+        "renderZones": false,
+        "columnOrder": [
+            "checkboxes",
+            "References",
+            "Value",
+            "Footprint",
+            "Description",
+            "LCSC",
+            "Quantity"
+        ],
+        "hiddenColumns": [],
+        "netColors": {},
+        "markWhenChecked": "Sourced",
+        "highlightRowOnClick": false
+    }
+}

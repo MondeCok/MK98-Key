@@ -6731,6 +6731,107 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:PWR_FLAG"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:VCC"
 			(power)
 			(pin_numbers
@@ -7604,6 +7705,16 @@
 			(type default)
 		)
 		(uuid "0f3ce533-18c8-4989-9909-17709cac0153")
+	)
+	(wire
+		(pts
+			(xy 28.956 72.39) (xy 28.956 76.454)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10fede28-12dd-4407-9672-27ce2b842672")
 	)
 	(wire
 		(pts
@@ -8797,6 +8908,16 @@
 	)
 	(wire
 		(pts
+			(xy 42.164 72.39) (xy 42.164 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "98978d45-305f-45ae-8c40-36e4682323b2")
+	)
+	(wire
+		(pts
 			(xy 127.508 76.962) (xy 127.508 78.232)
 		)
 		(stroke
@@ -9094,6 +9215,16 @@
 			(type default)
 		)
 		(uuid "b4ccc879-ed93-4722-8f1d-7772967a0285")
+	)
+	(wire
+		(pts
+			(xy 36.068 72.39) (xy 36.068 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b60008ea-4af1-408c-bf46-26e6fd8fb09c")
 	)
 	(wire
 		(pts
@@ -9654,6 +9785,16 @@
 			(type default)
 		)
 		(uuid "ed828278-bf09-44b5-9714-5c32ce24e0d1")
+	)
+	(wire
+		(pts
+			(xy 49.784 72.136) (xy 49.784 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "efad3f23-96fa-43ba-8f89-45a2454b687d")
 	)
 	(wire
 		(pts
@@ -11322,7 +11463,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C14663"
+		(property "LCSC" "C19666"
 			(at 64.008 80.772 90)
 			(effects
 				(font
@@ -11391,6 +11532,15 @@
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 82.55 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C22935"
+			(at 82.55 46.99 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12335,6 +12485,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+5V")
+		(at 49.784 72.136 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2810d6e8-7c41-405e-8137-2116771955a0")
+		(property "Reference" "#PWR010"
+			(at 49.784 75.946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V_LED"
+			(at 49.784 68.58 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 49.784 72.136 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 49.784 72.136 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 49.784 72.136 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bbbf8a5f-b2b3-46bf-829c-cdb706aae461")
+		)
+		(instances
+			(project "MK98"
+				(path "/1338e1d8-a7c8-4812-b062-0185bc1e9dbc"
+					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 191.262 87.63 270)
 		(mirror x)
@@ -12380,6 +12595,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 191.262 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2907044"
+			(at 191.262 87.63 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12703,7 +12927,7 @@
 				)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "100nf"
 			(at 258.064 119.38 90)
 			(effects
 				(font
@@ -12738,6 +12962,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C14663"
+			(at 258.064 124.46 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "1a278977-02ae-4667-813e-2f641f97b94d")
 		)
@@ -12748,6 +12981,72 @@
 			(project "MK98"
 				(path "/1338e1d8-a7c8-4812-b062-0185bc1e9dbc"
 					(reference "C125")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 49.784 76.2 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "35c5b628-5149-4060-bbc9-fffb6e97b4dd")
+		(property "Reference" "#FLG01"
+			(at 49.784 78.105 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 49.784 80.518 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 49.784 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 49.784 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 49.784 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6d080036-8089-4d3c-8280-b40727d41b98")
+		)
+		(instances
+			(project "MK98"
+				(path "/1338e1d8-a7c8-4812-b062-0185bc1e9dbc"
+					(reference "#FLG01")
 					(unit 1)
 				)
 			)
@@ -12800,6 +13099,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 242.824 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C98220"
 			(at 242.824 152.4 0)
 			(effects
 				(font
@@ -13189,7 +13497,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCCSC" "C14663"
+		(property "LCSC" "C14663"
 			(at 196.85 36.83 0)
 			(effects
 				(font
@@ -13258,6 +13566,15 @@
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 82.55 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C14675"
+			(at 82.55 43.18 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13410,6 +13727,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C160403"
+			(at 160.274 99.822 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "7c7d1179-e41a-407b-9b3d-b928b0692422")
 		)
@@ -13482,7 +13808,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSCC" "C14663"
+		(property "LCSC" "C19666"
 			(at 26.67 41.91 0)
 			(effects
 				(font
@@ -13577,6 +13903,72 @@
 			(project "MK98"
 				(path "/1338e1d8-a7c8-4812-b062-0185bc1e9dbc"
 					(reference "C117")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 28.956 76.454 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4ce0413f-147f-420a-8ad0-ec4bcc46bd92")
+		(property "Reference" "#FLG04"
+			(at 28.956 78.359 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 28.956 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 28.956 76.454 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 28.956 76.454 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 28.956 76.454 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1875d326-7533-4554-8ee9-d1f9f1f1af82")
+		)
+		(instances
+			(project "MK98"
+				(path "/1338e1d8-a7c8-4812-b062-0185bc1e9dbc"
+					(reference "#FLG04")
 					(unit 1)
 				)
 			)
@@ -13878,6 +14270,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3V3")
+		(at 42.164 72.39 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5d01244c-b6ab-4e7a-9e20-6ef86013fa01")
+		(property "Reference" "#PWR011"
+			(at 42.164 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3A"
+			(at 38.862 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 42.164 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 42.164 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 42.164 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e69f46fd-d56a-4de6-9832-515297c8ff8a")
+		)
+		(instances
+			(project "MK98"
+				(path "/1338e1d8-a7c8-4812-b062-0185bc1e9dbc"
+					(reference "#PWR011")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 197.358 132.08 0)
 		(mirror x)
@@ -13999,6 +14457,15 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 37.592 122.682 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5329994"
 			(at 37.592 122.682 0)
 			(effects
 				(font
@@ -14156,7 +14623,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C100042"
 			(at 119.888 80.772 90)
 			(effects
 				(font
@@ -14764,6 +15231,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C19702"
+			(at 46.99 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "c03760c8-053f-4632-9767-33820fd32b28")
 		)
@@ -14972,7 +15448,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C23630"
 			(at 72.39 168.402 90)
 			(effects
 				(font
@@ -15383,7 +15859,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3216-12_Kemet-S"
+		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B"
 			(at 207.01 49.53 0)
 			(effects
 				(font
@@ -15410,7 +15886,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C116270"
+		(property "LCSC" "C7207"
 			(at 207.01 49.53 0)
 			(effects
 				(font
@@ -15429,6 +15905,72 @@
 			(project "MK98"
 				(path "/1338e1d8-a7c8-4812-b062-0185bc1e9dbc"
 					(reference "C108")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 42.164 76.2 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "94de54e3-9396-43b3-b211-6ae41f990ec6")
+		(property "Reference" "#FLG02"
+			(at 42.164 78.105 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 42.164 80.518 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 42.164 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 42.164 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 42.164 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a7a0ebfd-f70b-4474-9b40-4dea763742f2")
+		)
+		(instances
+			(project "MK98"
+				(path "/1338e1d8-a7c8-4812-b062-0185bc1e9dbc"
+					(reference "#FLG02")
 					(unit 1)
 				)
 			)
@@ -15645,6 +16187,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C2907044"
+			(at 191.262 90.17 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "d68fa4e0-3798-4323-b54a-e7180c0026f4")
 		)
@@ -15706,6 +16257,15 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 160.274 109.982 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C160403"
 			(at 160.274 109.982 0)
 			(effects
 				(font
@@ -15957,7 +16517,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3216-12_Kemet-S"
+		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B"
 			(at 217.17 49.53 0)
 			(effects
 				(font
@@ -15984,7 +16544,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C116270"
+		(property "LCSC" "C7207"
 			(at 217.17 49.53 0)
 			(effects
 				(font
@@ -16218,6 +16778,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 36.068 76.2 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b142fd9d-1b6a-444d-9591-59d376e4d0c9")
+		(property "Reference" "#FLG03"
+			(at 36.068 78.105 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 36.068 80.518 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 36.068 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 36.068 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 36.068 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "acaa3773-68b7-4279-b3cc-80b207bbab04")
+		)
+		(instances
+			(project "MK98"
+				(path "/1338e1d8-a7c8-4812-b062-0185bc1e9dbc"
+					(reference "#FLG03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 20.32 36.83 0)
 		(unit 1)
@@ -16361,6 +16987,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+5V")
+		(at 36.068 72.39 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "baa838bc-c959-42d1-bda1-eaf7120959b1")
+		(property "Reference" "#PWR012"
+			(at 36.068 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 36.068 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 36.068 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 36.068 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 36.068 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cc0ae47b-36ea-4c2d-a366-559390bace33")
+		)
+		(instances
+			(project "MK98"
+				(path "/1338e1d8-a7c8-4812-b062-0185bc1e9dbc"
+					(reference "#PWR012")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Mars_Transistor:BSS138")
 		(at 96.52 43.18 0)
 		(unit 1)
@@ -16410,6 +17101,15 @@
 			)
 		)
 		(property "Description" "50V Vds, 0.22A Id, N-Channel MOSFET, SOT-23"
+			(at 96.52 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C3015220"
 			(at 96.52 43.18 0)
 			(effects
 				(font
@@ -16564,6 +17264,72 @@
 			(project ""
 				(path "/1338e1d8-a7c8-4812-b062-0185bc1e9dbc"
 					(reference "#PWR0469")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 28.956 72.39 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bf9d1453-2b16-4f97-be7d-18f0294e318d")
+		(property "Reference" "#PWR013"
+			(at 28.956 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 28.956 67.818 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 28.956 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 28.956 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 28.956 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "182afa57-a872-48b5-bd24-f258e459f2b9")
+		)
+		(instances
+			(project "MK98"
+				(path "/1338e1d8-a7c8-4812-b062-0185bc1e9dbc"
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -16749,7 +17515,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Fuse:Fuse_0603_1608Metric"
+		(property "Footprint" "Fuse:Fuse_1206_3216Metric"
 			(at 192.532 80.772 90)
 			(effects
 				(font
@@ -16776,7 +17542,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C210357"
+		(property "LCSC" "C89653"
 			(at 192.532 82.55 90)
 			(effects
 				(font
@@ -16846,6 +17612,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 242.824 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C98220"
+			(at 242.824 134.62 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16984,6 +17759,15 @@
 			)
 		)
 		(property "Description" "-4.0A Id, -30V Vds, P-Channel MOSFET, SOT-23"
+			(at 129.54 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5379091"
 			(at 129.54 38.1 0)
 			(effects
 				(font
@@ -17569,6 +18353,15 @@
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 114.3 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C14675"
+			(at 114.3 34.29 90)
 			(effects
 				(font
 					(size 1.27 1.27)
