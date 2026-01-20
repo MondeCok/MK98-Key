@@ -23,7 +23,6 @@
 /* USER CODE BEGIN Includes */
 
 /* USER CODE END Includes */
-extern DMA_HandleTypeDef hdma_adc1;
 
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN TD */
@@ -79,93 +78,69 @@ void HAL_MspInit(void)
 }
 
 /**
-  * @brief ADC MSP Initialization
+  * @brief I2C MSP Initialization
   * This function configures the hardware resources used in this example
-  * @param hadc: ADC handle pointer
+  * @param hi2c: I2C handle pointer
   * @retval None
   */
-void HAL_ADC_MspInit(ADC_HandleTypeDef* hadc)
+void HAL_I2C_MspInit(I2C_HandleTypeDef* hi2c)
 {
   GPIO_InitTypeDef GPIO_InitStruct = {0};
-  if(hadc->Instance==ADC1)
+  if(hi2c->Instance==I2C2)
   {
-    /* USER CODE BEGIN ADC1_MspInit 0 */
+    /* USER CODE BEGIN I2C2_MspInit 0 */
 
-    /* USER CODE END ADC1_MspInit 0 */
-    /* Peripheral clock enable */
-    __HAL_RCC_ADC1_CLK_ENABLE();
+    /* USER CODE END I2C2_MspInit 0 */
 
-    __HAL_RCC_GPIOC_CLK_ENABLE();
-    /**ADC1 GPIO Configuration
-    PC0     ------> ADC1_IN10
-    PC1     ------> ADC1_IN11
-    PC2     ------> ADC1_IN12
-    PC3     ------> ADC1_IN13
+    __HAL_RCC_GPIOB_CLK_ENABLE();
+    /**I2C2 GPIO Configuration
+    PB10     ------> I2C2_SCL
+    PB11     ------> I2C2_SDA
     */
-    GPIO_InitStruct.Pin = GPIO_PIN_0|GPIO_PIN_1|GPIO_PIN_2|GPIO_PIN_3;
-    GPIO_InitStruct.Mode = GPIO_MODE_ANALOG;
+    GPIO_InitStruct.Pin = GPIO_PIN_10|GPIO_PIN_11;
+    GPIO_InitStruct.Mode = GPIO_MODE_AF_OD;
     GPIO_InitStruct.Pull = GPIO_NOPULL;
-    HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
+    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
+    GPIO_InitStruct.Alternate = GPIO_AF4_I2C2;
+    HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
-    /* ADC1 DMA Init */
-    /* ADC1 Init */
-    hdma_adc1.Instance = DMA2_Stream0;
-    hdma_adc1.Init.Channel = DMA_CHANNEL_0;
-    hdma_adc1.Init.Direction = DMA_PERIPH_TO_MEMORY;
-    hdma_adc1.Init.PeriphInc = DMA_PINC_DISABLE;
-    hdma_adc1.Init.MemInc = DMA_MINC_ENABLE;
-    hdma_adc1.Init.PeriphDataAlignment = DMA_PDATAALIGN_HALFWORD;
-    hdma_adc1.Init.MemDataAlignment = DMA_MDATAALIGN_HALFWORD;
-    hdma_adc1.Init.Mode = DMA_CIRCULAR;
-    hdma_adc1.Init.Priority = DMA_PRIORITY_LOW;
-    hdma_adc1.Init.FIFOMode = DMA_FIFOMODE_ENABLE;
-    hdma_adc1.Init.FIFOThreshold = DMA_FIFO_THRESHOLD_HALFFULL;
-    hdma_adc1.Init.MemBurst = DMA_MBURST_INC4;
-    hdma_adc1.Init.PeriphBurst = DMA_PBURST_INC4;
-    if (HAL_DMA_Init(&hdma_adc1) != HAL_OK)
-    {
-      Error_Handler();
-    }
+    /* Peripheral clock enable */
+    __HAL_RCC_I2C2_CLK_ENABLE();
+    /* USER CODE BEGIN I2C2_MspInit 1 */
 
-    __HAL_LINKDMA(hadc,DMA_Handle,hdma_adc1);
-
-    /* USER CODE BEGIN ADC1_MspInit 1 */
-
-    /* USER CODE END ADC1_MspInit 1 */
+    /* USER CODE END I2C2_MspInit 1 */
 
   }
 
 }
 
 /**
-  * @brief ADC MSP De-Initialization
+  * @brief I2C MSP De-Initialization
   * This function freeze the hardware resources used in this example
-  * @param hadc: ADC handle pointer
+  * @param hi2c: I2C handle pointer
   * @retval None
   */
-void HAL_ADC_MspDeInit(ADC_HandleTypeDef* hadc)
+void HAL_I2C_MspDeInit(I2C_HandleTypeDef* hi2c)
 {
-  if(hadc->Instance==ADC1)
+  if(hi2c->Instance==I2C2)
   {
-    /* USER CODE BEGIN ADC1_MspDeInit 0 */
+    /* USER CODE BEGIN I2C2_MspDeInit 0 */
 
-    /* USER CODE END ADC1_MspDeInit 0 */
+    /* USER CODE END I2C2_MspDeInit 0 */
     /* Peripheral clock disable */
-    __HAL_RCC_ADC1_CLK_DISABLE();
+    __HAL_RCC_I2C2_CLK_DISABLE();
 
-    /**ADC1 GPIO Configuration
-    PC0     ------> ADC1_IN10
-    PC1     ------> ADC1_IN11
-    PC2     ------> ADC1_IN12
-    PC3     ------> ADC1_IN13
+    /**I2C2 GPIO Configuration
+    PB10     ------> I2C2_SCL
+    PB11     ------> I2C2_SDA
     */
-    HAL_GPIO_DeInit(GPIOC, GPIO_PIN_0|GPIO_PIN_1|GPIO_PIN_2|GPIO_PIN_3);
+    HAL_GPIO_DeInit(GPIOB, GPIO_PIN_10);
 
-    /* ADC1 DMA DeInit */
-    HAL_DMA_DeInit(hadc->DMA_Handle);
-    /* USER CODE BEGIN ADC1_MspDeInit 1 */
+    HAL_GPIO_DeInit(GPIOB, GPIO_PIN_11);
 
-    /* USER CODE END ADC1_MspDeInit 1 */
+    /* USER CODE BEGIN I2C2_MspDeInit 1 */
+
+    /* USER CODE END I2C2_MspDeInit 1 */
   }
 
 }
