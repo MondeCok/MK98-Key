@@ -509,7 +509,7 @@
       "plot": "Gerber/",
       "pos_files": "bom/",
       "specctra_dsn": "",
-      "step": "../Board_V1.step",
+      "step": "../3D/Board_V1.step",
       "svg": "",
       "vrml": ""
     },
